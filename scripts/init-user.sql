@@ -1,0 +1,5 @@
+-- init-user.sql
+CREATE USER niko WITH PASSWORD 'niko';
+ALTER USER niko WITH SUPERUSER;
+CREATE DATABASE origin_db;
+GRANT ALL PRIVILEGES ON DATABASE origin_db TO niko;
